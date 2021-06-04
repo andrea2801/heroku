@@ -1,0 +1,49 @@
+.trabajadoras{
+    .card-img-top{
+        width: calc(100% - 20px);
+    }
+    .modal-body{
+        list-style-image: url('/img/icons/usuario.png');
+    }
+    .buscar_dni{
+        width: 30px;
+        cursor: pointer;
+    }
+    select{
+        cursor: pointer;
+    }
+    #tabla_filtrar {
+        display: none;
+        table {
+            thead, td{
+                font-size: 14px !important;
+            }
+            thead{
+                background-color: #2679B9;
+                color: #ffffff;
+            }
+        }
+    }
+    .password{
+        display: none;
+    }
+    .ver_usuarios {
+        cursor: pointer;
+    }
+
+}
+@media (max-width: 767px){
+    .trabajadoras{
+        .card-img-top{
+            width: 200px;
+        }
+        #tabla_filtrar {
+            table {
+                thead, td{
+                    font-size: 12px !important;
+                }
+            }
+        }
+    }
+
+}

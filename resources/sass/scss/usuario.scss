@@ -1,0 +1,61 @@
+.card{
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    padding: 24px;
+    font-weight: normal;
+    width:60rem;
+
+}
+.dni{
+    font-size: 18px;
+    color: #1F1F1F;
+}
+h3{
+    color:#486c9c!important;
+}
+.edit-input{
+    display: none;
+    border-radius: 5px;
+    border: #1D4E8E 1px solid;
+    font-size: 18px;
+    color: #1F1F1F;
+    width: 100%;
+}
+input[type=number]{
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+}
+.edit-btn{
+    display: none;
+}
+.edit-text{
+    display: none;
+    font-size: 18px;
+    color: crimson;
+}
+
+@media (max-width: 767px){
+    .card{
+
+       width:80%;
+    }
+    .nota{
+        width:80%;
+        margin-left:5%;
+    }
+    .dni{
+        font-size: 14px;
+    }
+
+}
+@media (width: 577px){
+    .card{
+       width:70%;
+    }
+    .nota{
+        width:70%;
+        margin-left:5%;
+    }
+}
+
+

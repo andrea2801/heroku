@@ -1,0 +1,83 @@
+.login_body{
+    background-image: url('/img/fondo.jpg');
+    background-size: cover;
+    .login{
+        height: 100%;
+        .login_form{
+            border-radius: 5px;
+            background-color: rgba(255,255,255,.8);
+            max-width: 700px;
+            .formulario{
+                width: 100%;
+                .remerberme{
+                    color:#1F1F1F;
+                    margin-top: 26px;
+                    font-weight: normal !important;
+                    .form-check-input{
+                        position: relative;
+                    }
+                    .form-check-label{
+                        position: relative;
+                        bottom: 2px;
+                        font-size: 14px;
+                    }
+                }
+                .dni_login, .password_login{
+                    margin-top: 41px;
+                }
+                #dni_input_login,#password_input_login{
+                    font-size: 18px;
+                    box-shadow: inset 0 0 5px #00000061;
+                    color: #ADADAD !important;
+                }
+                .rect_mobil {
+                    background-color: #2679B9;
+                    border-radius: 2px;
+                    color: white;
+                    font-size: 18px;
+                    position: absolute;
+                    height: 33px;
+                    left: 16.8%;
+                    z-index: 9;
+                    width: 130px;
+                }
+                .botton_login{
+                    margin-top: 19px;
+                    width: 95%;
+                    font-size: 18px;
+                }
+                .forgot_password{
+                    color: #1F1F1F;
+                    margin-top: 37px;
+                    font-size: 17px;
+                    margin-bottom: 37px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 767px){
+    .login_body{
+        .login{
+            .login_form{
+                .formulario{
+                    .rect_mobil{
+                        font-size: 14px;
+                        width: 100px;
+                    }
+                    .botton_login{
+                        font-size: 14px;
+                    }
+                    .remerberme{
+                        .form-check-label{
+                            font-size: 12px;
+                        }
+                    }
+                    .forgot_password{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}

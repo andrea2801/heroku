@@ -1,0 +1,108 @@
+.usuarios{
+    .user-list{
+        list-style-image: url('/img/icons/usuario.png');
+        font-size: 14px;
+    }
+    .subtitleform{
+        color: #1D4E8E;
+    }
+}
+
+.usuarios_ts{
+    .title-search{
+        color: #151F1E;
+        font-size: 32px;
+    }
+    .subtitle-search{
+        color: #1D4E8E;
+        font-size: 24px;
+    }
+    .dni_search{
+        font-size: 18px;
+        color: #1D4E8E;
+    }
+    .btn_search{
+        border: none;
+        background-color: transparent;
+    }
+    .lupa{
+        width: 30px;
+    }
+    .btn-alta{
+        width: 100%;
+    }
+    .user_info{
+        display: none;
+    }
+    .container-border{
+        box-shadow: 0px 0px 19px 3px rgba(29,78,142,0.8);
+        background-color: #F3F3F3;
+        .name-user{
+            color: #1D4E8E;
+            font-size: 24px;
+        }
+        .content-text{
+            color: #1D4E8E;
+            font-size: 18px;
+        }
+        .text-general{
+            font-size: 18px;
+            color: #1F1F1F;
+        }
+        .info-content{
+            background-color: #ffffff;
+            border-radius: 5px;
+            border: #1D4E8E 1px solid;
+            width: 100%;
+        }
+        .input-num{
+            -webkit-appearance: none;
+            -moz-appearance: textfield;
+        }
+        .info-content-txtarea{
+            resize: none;
+            width: 100%;
+            cursor: default;
+        }
+        .txtarea-write{
+            resize: none;
+            width: 100%;
+        }
+    }
+}
+
+@media(max-width: 767px){
+    .usuarios_ts{
+        .title-search{
+            font-size: 24px;
+        }
+        .subtitle-search{
+            font-size: 20px;
+        }
+        .dni_search{
+            font-size: 14px;
+        }
+        .container-border{
+            .name-user{
+                font-size: 20px;
+            }
+            .content-text{
+                font-size: 14px;
+            }
+            .text-general{
+                font-size: 14px;
+            }
+        }
+    }
+    .usuarios{
+        .title-user{
+            font-size: 24px;
+        }
+        .subtitle-user{
+            font-size: 20px;
+        }
+        .user-list{
+            font-size: 12px;
+        }
+    }
+}

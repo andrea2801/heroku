@@ -1,0 +1,55 @@
+.notificaciones{
+    .container-principal{
+        .btn-general{
+            width: 100%;
+        }
+        .home-title{
+            font-size: 32px;
+            color: #151F1E;
+        }
+        .content-text{
+            font-size: 18px;
+            color: #151F1E;
+        }
+        .first-home-txt{
+            font-size: 24px;
+            color: #1D4E8E;
+        }
+        .mas{
+            width: 20px;
+        }
+        .mas:hover{
+            opacity: 80%;
+        }
+        .text-mostrar{
+            color: #1D4E8E;
+            font-size: 12px;
+            .arrow{
+                width: 20px;
+            }
+        }
+    }
+}
+@media(max-width: 990px){
+    .notificaciones{
+        .container-principal{
+            .home-title{
+                font-size: 20px !important;
+            }
+            .first-home-txt{
+                font-size: 20px !important;
+            }
+        }
+    }
+}
+@media(max-width: 450px){
+    .notificaciones{
+        .container-principal{
+            .table{
+                .oculta{
+                    display: none;
+                }
+            }
+        }
+    }
+}

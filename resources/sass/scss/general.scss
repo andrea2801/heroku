@@ -1,0 +1,143 @@
+html,body{
+    height: 100%;
+    font-family: 'Nunito';
+}
+//Paleta de colores DeltaSAD
+$rect_mobil: #2679B9;
+$letras_negras: #1F1F1F;
+$links_click:#50B2CE;
+//FUENTES
+
+
+//css
+.bg-color{
+    background-color: #1d4e8e !important;
+    color: #ffffff !important;
+}
+.input_general{
+    height: 38px;
+    font-size: 18px !important;
+    box-shadow: inset 0 0 5px #00000061 !important;
+    color: #ADADAD !important;
+}
+.modal-header{
+    background-color: #1d4e8e !important;
+    color: #ffffff !important;
+}
+h4{
+    font-size: 20px !important;
+}
+.all-content{
+    width: 100%;
+}
+.modal-body {
+    color: #1F1F1F !important;
+}
+.normal-text{
+    color: #1F1F1F !important;
+    font-size: 14px !important;
+}
+.errorDniNie{
+    display: none;
+}
+.content-box {
+    box-shadow: 0px 0px 19px 3px rgba(29,78,142,0.8) !important;
+    background-color: #F3F3F3 !important;
+}
+.content-box-red {
+    box-shadow: 1px 1px 1px 1px rgba(221, 59, 38, 0.8);
+}
+.swal2-styled.swal2-confirm{
+    background-color: #2679B9 !important;
+}
+.swal2-styled.swal2-confirm:focus {
+    box-shadow: 0 0 0 3px rgba(103, 158, 240, 0.5) !important;
+}
+.close-cross{
+    width: 15px;
+    cursor: pointer;
+}
+.btn-general{
+    background-color: #2679B9;
+    color: #ffffff;
+    font-size: 18px !important;
+}
+.btn-general:hover{
+    background-color: #50b2ce;
+    color: #ffffff !important;
+}
+.changes{
+    display:none;
+}
+section{
+    .title-user{
+        font-size: 32px;
+        color: #151F1E;
+    }
+    .subtitle-user{
+        font-size: 24px;
+        color: #1D4E8E;
+    }
+    .container-principal{
+        width: 95% !important;
+        max-width: 1440px !important;
+        margin: 0 auto;
+        margin: 5% auto 5%;
+    }
+    .text-general{
+        font-size: 18px;
+        color: #1F1F1F;
+    }
+    .content-text{
+        font-size: 18px;
+        color: #1F1F1F;
+        background-color: #ffffff;
+        border-radius: 5px;
+        border: #1D4E8E 1px solid;
+    }
+    .first-text{
+        color: #1D4E8E;
+        font-size: 18px;
+    }
+    textarea{
+        resize: none;
+        width: 100%;
+    }
+    hr{
+        background-color: #2679B9;
+        height: 1px;
+        margin-top: 0 !important;
+    }
+    .mas{
+        width: 20px;
+    }
+    thead{
+        background-color: #486C9C;
+        color: #ffffff;
+    }
+    tbody{
+        color: #151F1E;
+    }
+    thead, tbody{
+        font-size: 12px;
+    }
+}
+@media(max-width: 990px){
+    section{
+        .btn-general{
+            font-size: 14px !important;
+        }
+        .content-text{
+            font-size: 14px;
+        }
+        .text-general{
+            font-size: 14px;
+        }
+        .first-text{
+            font-size: 14px;
+        }
+    }
+    .normal-text{
+        font-size: 12px !important;
+    }
+}
