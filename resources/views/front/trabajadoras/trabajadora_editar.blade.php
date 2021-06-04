@@ -16,10 +16,10 @@
                             <p class="first-text">Apellidos: <span><input name="apellidos" type="text" value="" class="content-text" required></span></p>
                         </div>
                         <div class="col-12 col-md-6">
-                            <p class="first-text">Teléfono: <span><input name="telefono" type="number" value="" class="content-text"  minlength="9" ></span></p>
+                            <p class="first-text">Teléfono: <span><input name="telefono" type="number" value="" class="content-text"  minlength="9" required></span></p>
                         </div>
                         <div class="col-12 col-md-6">
-                            <p class="first-text">Email: <span><input name="email" type="email" value="" class="content-text" ></span></p>
+                            <p class="first-text">Email: <span><input name="email" type="email" value="" class="content-text" required></span></p>
                         </div>
                         <div class="col-12">
                             <div class="changePassword mt-3 mb-4">
@@ -43,7 +43,7 @@
                         <div class="col-12">
                             <p class="first-text">Zona:
                                 <span>
-                                    <select class="content-text" title="Porfavor, selecciona una zona" name="zona">
+                                    <select class="content-text" title="Porfavor, selecciona una zona" name="zona" required>
                                         <option value="1">Zona I (Clot)</option>
                                         <option value="2">Zona II (Sant Martí)</option>
                                         <option value="3">Zona III (Sagrada Familia)</option>
@@ -80,4 +80,22 @@
         </div>
     </div>
 </div>
+@if(Session::has('updated'))
+    <script type="text/javascript">
+        Swal.fire({
+            icon: 'success',
+            title: 'Done!',
+            text: 'Trabajadora modificada'
+        })
 
+    </script>
+@elseif(Session::has('updated'))
+<script type="text/javascript">
+    Swal.fire({
+        icon: 'error',
+        title: 'Ups!',
+        text: 'Error al modificar trabajadora :('
+    })
+
+</script>
+@endif

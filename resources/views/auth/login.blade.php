@@ -11,7 +11,7 @@
                 <input type="hidden" name="_token" value="{{ csrf_token() }}"/>
                     <div class="form-group dni_login">
                         <div class="row d-flex justify-content-center">
-                            <label class="col-8 rect_mobil dni_mov align-items-center d-flex" for="dni">{{ __('DNI') }}</label>
+                            <label class="col-8 rect_mobil dni_mov align-items-center d-flex" for="dni_input_login">{{ __('DNI') }}</label>
                             <input id="dni_input_login" type="text" class="col-8 form-control @error('dni') is-invalid @enderror" name="dni" required autocomplete="off" autofocus>
                                 @error('dni')
                                 <span class="invalid-feedback" role="alert">
@@ -21,7 +21,7 @@
                         </div>
                     </div>
                     <div class="form-group row password_login d-flex justify-content-center">
-                        <label class="col-8 rect_mobil pass_mov align-items-center d-flex" for="password">{{ __('Contaseña') }}</label>
+                        <label class="col-8 rect_mobil pass_mov align-items-center d-flex" for="password_input_login">{{ __('Contaseña') }}</label>
                         <input id="password_input_login" type="password" class="col-8 form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
                             @error('password')
                             <span class="invalid-feedback" role="alert">
@@ -40,9 +40,8 @@
                             {{ __('¿Has olvidado tu contraseña?') }}
                         </a>
                     </div>
-               </form>
+                </form>
             </div>
         </div>
-    </div>
 </section>
 @endsection

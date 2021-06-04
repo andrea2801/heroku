@@ -1,4 +1,4 @@
-@if (Auth::user()->id == 2)
+@if (Auth::user()->rol_id == 2)
 @include('front.usuarios_trabajadora.tf.popUpNotas', ['usuario' => $usuario])
 <section>
     <div class="row container-principal">
