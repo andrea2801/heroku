@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="login d-flex align-items-center p-5">
+<section class="login d-flex align-items-center p-5">
     <div class="row container-principal justify-content-center">
         <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
             <img src="{{asset('img/Logo2.png')}}" alt="DeltaSAd">
@@ -43,5 +43,5 @@
                 </form>
             </div>
         </div>
-</div>
+</section>
 @endsection
