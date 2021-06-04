@@ -17,8 +17,7 @@ class IncidenciasController extends Controller
         $insert=DB::table('incidencias')->insert([
             'created_at' => Carbon::now(),
             'descripcion' => $request->descripcion,
-            'id_usuario' => $request->usuario,
-            'id_tf' => $request->tf
+            'id_usuario' => $request->usuario
         ]);
 
         if($insert == false){

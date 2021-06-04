@@ -119,9 +119,7 @@ class TrabajadorasController extends Controller
                 'tf_asignada2' => null
             ]);
         }
-        DB::table('evolutivos')->where('id_tf', $id)->update([
-            'id_tf' => null
-        ]);
+
         DB::table('users')
                 ->where('id', $id)
                 ->delete();
