@@ -18,10 +18,8 @@ class CreateIncidenciasTable extends Migration
             $table->string('descripcion');
             $table->boolean('estado')->default(0);
             $table->unsignedBigInteger('id_usuario');
-            $table->unsignedBigInteger('id_tf');
             $table->timestamps();
             $table->foreign('id_usuario')->references('id')->on('usuarios');
-            $table->foreign('id_tf')->references('id')->on('users');
         });
     }
 

@@ -55,7 +55,6 @@ class UsuariosController extends Controller
                             ->where('usuarios.id', $user_id)
                             ->get();
             $incidencias = DB::table('incidencias')
-                            ->join('users', 'users.id', '=', 'incidencias.id_tf')
                             ->join('usuarios', 'usuarios.id', '=', 'incidencias.id_usuario')
                             ->select( 'estado', 'descripcion', 'incidencias.created_at', DB::raw('incidencias.id AS idi'))
                             ->where('usuarios.id', $user_id)
