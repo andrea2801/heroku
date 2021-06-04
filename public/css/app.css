@@ -20149,6 +20149,9 @@ h4 {
   display: none;
 }
 
+section .gif {
+  width: 100%;
+}
 section .title-user {
   font-size: 32px;
   color: #151F1E;
@@ -20425,34 +20428,6 @@ section thead, section tbody {
     display: none;
   }
 }
-.footer {
-  bottom: 0;
-  position: relative;
-  margin-top: 5%;
-}
-.footer .first-footer-line {
-  background-color: #f3f3f3;
-  min-height: 35px;
-}
-.footer .second-footer-line {
-  background-color: #1d4e8e;
-  min-height: 55px;
-}
-.footer .second-footer-line .footer-txt {
-  font-size: 18px;
-  color: #f3f3f3;
-}
-.footer .second-footer-line .first-footer-txt {
-  font-size: 19px;
-}
-.footer .second-footer-line .second-footer-txt {
-  opacity: 80%;
-}
-.footer .second-footer-line .second-footer-txt:hover {
-  color: #50b2ce;
-  text-decoration: none;
-}
-
 .trabajadoras .card-img-top {
   width: calc(100% - 20px);
 }

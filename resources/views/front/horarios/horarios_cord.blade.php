@@ -13,7 +13,7 @@
                     <hr>
                 </div>
                 <div class="col-10 mt-3 d-flex justify-content-center">
-                <img src="{{asset('img/progress.gif')}}" alt="">
+                <img class="gif" src="{{asset('img/progress.gif')}}" alt="">
                 </div>
             </div>
         </div>
