@@ -15,6 +15,14 @@ Todo esto y mucho más que podemos encontrar en esta nueva intranet, cumplirá c
     <li>Boostrap</li>
 </ol>
 
+Necesario:
+-composer require laravel/passport
+-php artisan passport:install
+
+DB:
+-php artisan migrate:fresh
+-php artisan db:seed
+
 
 
 
