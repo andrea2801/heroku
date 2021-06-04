@@ -16,9 +16,6 @@
                                 <textarea name="evolucion" class="form-control" maxlength=300 rows="4" required></textarea>
                             </div>
                             <input type="hidden" name="usuario" value="{{$u->id}}">
-                            @foreach ($tfs as $tf )
-                                <input type="hidden" name="tf" value={{$tf->id}}>
-                            @endforeach
                         </div>
                         <div class="modal-footer">
                             <div class="row">
