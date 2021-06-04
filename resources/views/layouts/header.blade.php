@@ -52,11 +52,21 @@
                             @csrf
                         </form>
                     </p>
-                    <a class="d-flex d-md-none" href="">
+                    <a class="d-flex d-md-none" href="{{ route('logout') }}"
+                            onclick="event.preventDefault();
+                            document.getElementById('logout-form').submit();">
                         <img class="logout" src="{{asset('img/icons/logout.png')}}">
                     </a>
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                        @csrf
+                    </form>
                 </nav>
             </div>
         </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <a rel="license" href='http://creativecommons.org/licenses/by-nc-nd/4.0/%22%3E'><img alt='Licencia de Creative Commons' style='border-width:0' src='https://i.creativecommons.org/l/by-nc-nd/4.0/80x15.png' /></a></a>
     </div>
 </div>
