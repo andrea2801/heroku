@@ -109,16 +109,19 @@ class TrabajadorasController extends Controller
 
      protected function delete($id){
         if (DB::table('usuarios')->where('tf_asignada', $id)->exists()) {
-            $update=DB::table('usuarios')->where('tf_asignada', $id)->update([
+            DB::table('usuarios')->where('tf_asignada', $id)->update([
                 'tf_asignada' => null
             ]);
 
         }
         if (DB::table('usuarios')->where('tf_asignada2', $id)->exists()) {
-            $update=DB::table('usuarios')->where('tf_asignada2', $id)->update([
+            DB::table('usuarios')->where('tf_asignada2', $id)->update([
                 'tf_asignada2' => null
             ]);
         }
+        DB::table('evolutivos')->where('id_tf', $id)->update([
+            'id_tf' => null
+        ]);
         DB::table('users')
                 ->where('id', $id)
                 ->delete();
