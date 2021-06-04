@@ -18,8 +18,7 @@ class EvolutivosController extends Controller
         $create = DB::table('evolutivos')->insert([
             'fecha_creacion' => Carbon::now(),
             'descripcion' => $request->evolucion,
-            'id_usuario' => $request->usuario,
-            'id_tf' => $request->tf
+            'id_usuario' => $request->usuario
         ]);
         if($create == false){
             Session::flash('Eerror', 'Error al crear evolutivo');

@@ -16,10 +16,8 @@ class CreateEvolutivosTable extends Migration
         Schema::create('evolutivos', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('id_usuario');
-            $table->unsignedBigInteger('id_tf')->nullable();
             $table->string('descripcion');
             $table->date('fecha_creacion');
-            $table->foreign('id_tf')->references('id')->on('users');
             $table->foreign('id_usuario')->references('id')->on('usuarios');
         });
     }

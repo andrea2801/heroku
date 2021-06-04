@@ -62,8 +62,7 @@ class UsuariosController extends Controller
                             ->get();
             $evolutivos = DB::table('evolutivos')
                             ->join('usuarios', 'id_usuario', '=', 'usuarios.id')
-                            ->join('users', 'id_tf', '=', 'users.id')
-                            ->select('evolutivos.id', 'evolutivos.fecha_creacion', 'evolutivos.descripcion', 'users.nombre')
+                            ->select('evolutivos.id', 'evolutivos.fecha_creacion', 'evolutivos.descripcion')
                             ->where('id_usuario', $user_id)
                             ->get();
             $tf=DB::table('users')->select('id', 'nombre', 'apellidos')->where('zona', Auth::user()->zona)->where('rol_id', 2)->get();
