@@ -69,7 +69,7 @@
                         })
                     </script>
                     <div class="col-12 d-flex justify-content-center">
-                        <p class="content-text">No has enviado ninguna notificación</p>
+                        <p class="normal-text">No has enviado ninguna notificación</p>
                     </div>
                 @endif
             @endif
