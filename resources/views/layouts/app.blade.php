@@ -3,8 +3,6 @@
 <head>
     <title>DeltaSAD</title>
     <link rel="icon" type="image/png" href="{{asset('img/Logo2.png')}}" sizes="64x64">
-    <meta charset="utf-8">
-    @yield('title')
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
 
@@ -23,14 +21,14 @@
 
 </head>
 <body class="login_body">
-    @yield('content')
+ @yield('content')
 
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script  src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 
     <script src="{{ asset('front/js/main.js') }}"></script>
     <script src="{{ asset('js/app.js') }}" defer></script>
-    <script src="{{ asset('front/js/bootstrap.min.js') }}"></script>
+    <script  src="{{ asset('front/js/bootstrap.min.js') }}"></script>
 
     @yield('scripts')
 </body>
