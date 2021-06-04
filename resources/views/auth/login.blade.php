@@ -12,7 +12,7 @@
                     <div class="form-group dni_login">
                         <div class="row d-flex justify-content-center">
                             <label class="col-8 rect_mobil dni_mov align-items-center d-flex" for="dni_input_login">{{ __('DNI') }}</label>
-                            <input id="dni_input_login" type="text" class="col-8 form-control @error('dni') is-invalid @enderror" name="dni" required autocomplete="off" autofocus>
+                            <input id="dni_input_login" type="text" class="col-8 form-control @error('dni') is-invalid @enderror" name="dni" required autocomplete="on" autofocus>
                                 @error('dni')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
