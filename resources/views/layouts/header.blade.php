@@ -67,6 +67,6 @@
 </div>
 <div class="row">
     <div class="col-12">
-        <a rel="license" href='http://creativecommons.org/licenses/by-nc-nd/4.0/%22%3E'><img alt='Licencia de Creative Commons' style='border-width:0' src='https://i.creativecommons.org/l/by-nc-nd/4.0/80x15.png' /></a></a>
+        <a rel="license" href='http://creativecommons.org/licenses/by-nc-nd/4.0/%22%3E'><img alt='Licencia de Creative Commons' style='border-width:0' src='https://i.creativecommons.org/l/by-nc-nd/4.0/80x15.png' /></a>
     </div>
 </div>

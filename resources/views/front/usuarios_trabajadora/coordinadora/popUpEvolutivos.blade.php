@@ -13,7 +13,7 @@
                                 <p>Evolución de <strong>{{$u->nombre}} {{$u->apellidos}}</strong>:</p>
                             </div>
                             <div class="col-12">
-                                <textarea name="evolucion" class="form-control" maxlength=150 rows="4" required></textarea>
+                                <textarea name="evolucion" class="form-control" maxlength=300 rows="4" required></textarea>
                             </div>
                             <input type="hidden" name="usuario" value="{{$u->id}}">
                             @foreach ($tfs as $tf )

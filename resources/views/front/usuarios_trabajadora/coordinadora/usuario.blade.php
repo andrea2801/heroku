@@ -1,4 +1,4 @@
-@if (Auth::user()->id == 1)
+@if (Auth::user()->rol_id == 1)
 @if(isset($usuario))
 @include('front.usuarios_trabajadora.coordinadora.popUpEvolutivos', ['usuario' => $usuario, 'tfs' => $tfs])
 @include('front.usuarios_trabajadora.coordinadora.popUpIncidencias', ['usuario' => $usuario, 'tfs' => $tfs])

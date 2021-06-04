@@ -1,4 +1,4 @@
-@if (Auth::user()->id == 3)
+@if (Auth::user()->rol_id == 3)
 @extends('layouts.master')
 @section('content')
 <section class="usuarios_ts">
