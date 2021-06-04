@@ -65,7 +65,7 @@
         </div>
     </div>
 </div>
-<div class="row">
+<div class="row container-fluid">
     <div class="col-12">
         <a rel="license" target="_blank" href='http://creativecommons.org/licenses/by-nc-nd/4.0/'><img alt='Licencia de Creative Commons' style='border-width:0' src='https://i.creativecommons.org/l/by-nc-nd/4.0/80x15.png' /></a>
     </div>
