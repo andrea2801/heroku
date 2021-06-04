@@ -27,7 +27,7 @@
 
 @yield('content')
 
-<div class="row container-fluid m-5 p-5">
+<div class="row container-fluid mt-5 pt-5">
     <div class="col-12"></div>
 </div>
 
